@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,800&display=swap');
+
+*{
+  /* box-sizing: border-box; */
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  margin: 0;
+  background-color: #E7E7E7;
+}
+
+nav{
+  height: 80px;
+  display: flex;
+  padding: 5px 10px;
+  box-shadow:  0px 2.98256px 7.4564px rgba(0,0,0,0.2);
+}
+
+section{
+  padding: 20px;
+}
+
+.gray{
+  color: #918E9B
+}
+
+.title{
+  display: flex;
+  padding: 0px 15px;
+}
+
+.nav--logo{
+  /* This fixes safari bug */
+  max-width: 100px;
+}
+
+.ledger{
+  display: flex;
+  flex-direction: column;
+}
+
+.ledger--background{
+  max-width: 800px;
+  align-self: center;
+}
+
+.ledger--header{
+  margin: 10px 0 16px 35px;
+}
+
+.ledger--text{
+  margin: 0 0 0 35px;
+}
+
+.cards{
+  display: flex;
+  /* justify-content: center; */ /* use this only when displaying everything */
+  flex-wrap: nowrap;
+  gap: 40px;
+  overflow-x: auto;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: 225px; */
+  /* flex: 0 0 auto; */
+  width: 250px; /* forces a size of the card */
+  height: auto;
+  flex: 0 0 auto; /* adjust the card size by auto */
+  padding: 20px;
+  /* margin up right down left */
+  margin: 10px 0px 20px 10px;
+  box-shadow:  0px 2.98256px 7.4564px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  position: relative
+}
+
+.card--image{
+  width: 100%;
+  /* height: auto; */
+  /* align-self: center; */
+  border-radius: 10px;
+  /* object-fit: cover; */
+}
+
+.badge{
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: #E7E7E7;
+  padding: 2px 4px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.card > h3{
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.stats{
+  display:flex;
+  align-items: baseline;
+}
+
+.stats > p{
+  margin: 0 2px 10px 0;
+  color: lightslategray;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+}
+
+.info > p{
+  margin-left: 10px;
+  margin-block: 3px;
+  font-size: 16px;
+  color: #2B283A;
+}
+
+.card--phone{
+  height: 18px;
+  margin-right: 8px;
+}
+
+.card--email{
+  height: 22px;
+}
